@@ -1,0 +1,11 @@
+<h1> Welcome to the Blog post.....</h1>
+<%= @posts.each do |p| %>
+	<div class='card-body bg-light'>
+	
+	<h3><%=p.title%></h3>
+	<p><%=p.body%></p>
+	<%= link_to "Read more", post_path(p), :class => 'btn btn-info btn-sm' %>
+	</div>
+
+<%end%>
+
